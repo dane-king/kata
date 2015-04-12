@@ -1,12 +1,12 @@
 package com.babysitter;
 
+import org.junit.Before;
+import org.junit.Test;
+
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.not;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertThat;
-
-import org.junit.Before;
-import org.junit.Test;
 
 public class DollarsTest {
 	private Dollars underTest;
