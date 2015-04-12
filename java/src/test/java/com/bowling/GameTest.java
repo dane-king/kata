@@ -11,7 +11,7 @@ import org.mockito.MockitoAnnotations;
 public class GameTest {
 
 	@Mock
-	private Scorer scorer;
+	private Game.Scorer scorer;
 
 	private Game game;
 

@@ -16,4 +16,15 @@ public class Game {
 		scorer.update(pins);
 	}
 
+	public static class Scorer {
+
+        public void update(final int pins) {
+
+        }
+
+        public int getScore() {
+            return 0;
+        }
+
+    }
 }

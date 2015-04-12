@@ -1,10 +1,8 @@
 package com.vending.items;
 
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Test;
 
-import com.vending.items.Coin;
+import static org.junit.Assert.assertEquals;
 
 public class CoinTest {
 	@Test
