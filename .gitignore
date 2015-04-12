@@ -31,3 +31,4 @@ groovy/gradlew
 groovy/gradlew.bat
 groovy/gradle
 java/kata.iml
+**/target
