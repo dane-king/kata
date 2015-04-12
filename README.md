@@ -1,4 +1,4 @@
-### Place for kata code
+### Kata code and examples
 
 #### Languages 
 - [Java] (/java)
