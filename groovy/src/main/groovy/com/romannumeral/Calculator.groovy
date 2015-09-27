@@ -5,20 +5,21 @@ class Calculator {
     static String convert(Integer num) {
         String romanNumeral = ""
         while (num > 0) {
-            if (num <= 3) {
-                romanNumeral += "I"
-                num = num - 1
-            } else if (num == 4) {
-                romanNumeral += "IV"
-                num = num - 4
-            } else if (num < 10) {
-                romanNumeral += "V"
-                num = num - 5
-            } else if (num < 50) {
-                romanNumeral += "X"
-                num = num - 10
-            }
+            (num, romanNumeral) = checkNumAndString({n->n<50}, romanNumeral, num, "X", 10)
+            (num, romanNumeral) = checkNumAndString({n->n<10}, romanNumeral, num, "V", 5)
+            (num, romanNumeral) = checkNumAndString({n->n==4}, romanNumeral, num, "IV", 4)
+            (num, romanNumeral) = checkNumAndString({n->n<=3},romanNumeral, num, "I", 1)
         }
         return romanNumeral
     }
+
+
+    private static List checkNumAndString(Closure predicate,String romanNumeral, int inNumber, String addString, int checkDigit) {
+        if(predicate(inNumber)){
+            romanNumeral += addString
+            inNumber -= checkDigit
+        }
+        [inNumber, romanNumeral]
+    }
+
 }
