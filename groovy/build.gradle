@@ -22,8 +22,6 @@ dependencies {
 
     // dependencies used by examples in this project
     testRuntime "com.h2database:h2:1.4.182"
-
-
 }
 
 task wrapper(type: Wrapper) {
