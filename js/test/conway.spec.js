@@ -1,5 +1,5 @@
 describe('World', function () {
-	it('should be defined', function (done) {
+	it('should be defined', function () {
 		expect(World).toBeDefined();
 	});
 });

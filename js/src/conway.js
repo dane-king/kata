@@ -1,3 +1,1 @@
-describe('World', function(){
-	
-});
+var World=function(){};
