@@ -30,7 +30,8 @@ gradle-app.setting
 groovy/gradlew
 groovy/gradlew.bat
 groovy/gradle
-java/kata.iml
-**/target
-java/java.iml
-groovy/groovy.iml
+/**/target/
+**/*.iml
+**/mvnw*
+**/.mvn
+groovy/groovy.imltarget\
